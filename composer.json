@@ -1,0 +1,15 @@
+{
+    "name": "joaocaraujo/digital-cep",
+    "description": "Procura de CEP online",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "João Araujo",
+            "email": "araujo_joaol@yahoo.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0"
+    }
+}
