@@ -2,10 +2,12 @@
 
 namespace Joaocaraujo\DigitalCep;
 
-class Search {
+class Search
+{
     private $url = "https://viacep.com.br/ws/";
 
-    public function getAddressFromZipcode(string $zipcode): array {
+    public function getAddressFromZipcode(string $zipcode): array
+    {
         $zipcode = preg_replace('/[^0-9]/im', '', $zipcode);
 
         $get = file_get_contents($this->url . $zipcode . "/json");
@@ -13,4 +15,3 @@ class Search {
         return (array) json_decode($get);
     }
 }
-
